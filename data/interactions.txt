@@ -1,0 +1,101 @@
+Observation_ID,Time_Offset_Hours,Interaction_Type,Duration_Mins,Immediate_Feel,Daily_Impact,Day,Date,Time
+1,0.0,In Person,1.0,Stressed,Drained,Mon,2026-10-05,08:00:00
+2,1.0,In Person,3.0,Stressed,Drained,Mon,2026-10-05,09:00:00
+3,2.0,In Person,5.0,Happy,Energized,Mon,2026-10-05,10:00:00
+4,5.0,Text,12.0,Stressed,Drained,Mon,2026-10-05,13:00:00
+5,7.0,Text,4.0,Happy,Energized,Mon,2026-10-05,15:00:00
+6,8.0,Text,8.0,Happy,Energized,Mon,2026-10-05,16:00:00
+7,11.0,Phone Call,4.0,Happy,Motivated,Mon,2026-10-05,19:00:00
+8,22.0,Text,1.0,Excited,Energized,Tue,2026-10-06,06:00:00
+9,23.0,Text,1.0,Happy,Relaxed,Tue,2026-10-06,07:00:00
+10,25.0,In Person,2.0,Calm,Neutral,Tue,2026-10-06,09:00:00
+11,27.0,In Person,4.0,Neutral,Drained,Tue,2026-10-06,11:00:00
+12,29.0,Text,8.0,Stressed,Drained,Tue,2026-10-06,13:00:00
+13,30.0,Text,12.0,Stressed,Relaxed,Tue,2026-10-06,14:00:00
+14,31.0,In Person,20.0,Calm,Energized,Tue,2026-10-06,15:00:00
+15,47.0,Text,40.0,Happy,Motivated,Wed,2026-10-07,07:00:00
+16,48.0,Phone Call,12.0,Excited,Distracted,Wed,2026-10-07,08:00:00
+17,49.0,Text,2.0,Calm,Relaxed,Wed,2026-10-07,09:00:00
+18,52.0,In Person,4.0,Excited,Energized,Wed,2026-10-07,12:00:00
+19,53.0,In Person,9.0,Excited,Energized,Wed,2026-10-07,13:00:00
+20,55.0,In Person,2.0,Happy,Motivated,Wed,2026-10-07,15:00:00
+21,56.0,Phone Call,1.0,Calm,Relaxed,Wed,2026-10-07,16:00:00
+22,70.0,Video Call,5.0,Calm,Neutral,Thu,2026-10-08,06:00:00
+23,73.0,Text,2.0,Happy,Motivated,Thu,2026-10-08,09:00:00
+24,76.0,Text,1.0,Calm,Relaxed,Thu,2026-10-08,12:00:00
+25,78.0,Text,1.0,Happy,Motivated,Thu,2026-10-08,14:00:00
+26,79.0,Phone Call,6.0,Happy,Motivated,Thu,2026-10-08,15:00:00
+27,80.0,Phone Call,7.0,Calm,Relaxed,Thu,2026-10-08,16:00:00
+28,81.0,Video Call,10.0,Excited,Energized,Thu,2026-10-08,17:00:00
+29,96.0,Video Call,1.0,Stressed,Drained,Fri,2026-10-09,08:00:00
+30,98.0,In Person,2.0,Happy,Energized,Fri,2026-10-09,10:00:00
+31,99.0,Text,2.0,Happy,Distracted,Fri,2026-10-09,11:00:00
+32,101.0,Video Call,6.0,Stressed,Drained,Fri,2026-10-09,13:00:00
+33,102.0,In Person,1.0,Excited,Distracted,Fri,2026-10-09,14:00:00
+34,103.0,Text,30.0,Excited,Energized,Fri,2026-10-09,15:00:00
+35,105.0,Text,22.0,Stressed,Drained,Fri,2026-10-09,17:00:00
+36,122.0,Video Call,1.0,Happy,Energized,Sat,2026-10-10,10:00:00
+37,123.0,In Person,3.0,Happy,Energized,Sat,2026-10-10,11:00:00
+38,124.0,Text,6.0,Calm,Motivated,Sat,2026-10-10,12:00:00
+39,126.0,In Person,2.0,Calm,Relaxed,Sat,2026-10-10,14:00:00
+40,127.0,Text,1.0,Happy,Energized,Sat,2026-10-10,15:00:00
+41,129.0,Phone Call,22.0,Excited,Energized,Sat,2026-10-10,17:00:00
+42,130.0,Text,2.0,Happy,Energized,Sat,2026-10-10,18:00:00
+43,144.0,Phone Call,1.0,Excited,Energized,Sun,2026-10-11,08:00:00
+44,146.0,Video Call,2.0,Happy,Energized,Sun,2026-10-11,10:00:00
+45,147.0,Phone Call,30.0,Happy,Energized,Sun,2026-10-11,11:00:00
+46,149.0,Text,12.0,Excited,Energized,Sun,2026-10-11,13:00:00
+47,150.0,Video Call,11.0,Excited,Energized,Sun,2026-10-11,14:00:00
+48,152.0,Text,20.0,Anxious,Distracted,Sun,2026-10-11,16:00:00
+49,153.0,In Person,2.0,Happy,Motivated,Sun,2026-10-11,17:00:00
+50,168.0,Video Call,1.0,Happy,Relaxed,Mon,2026-10-12,08:00:00
+51,169.0,In Person,3.0,Excited,Energized,Mon,2026-10-12,09:00:00
+52,170.0,In Person,5.0,Excited,Energized,Mon,2026-10-12,10:00:00
+53,173.0,In Person,12.0,Anxious,Drained,Mon,2026-10-12,13:00:00
+54,175.0,Text,4.0,Happy,Energized,Mon,2026-10-12,15:00:00
+55,176.0,Video Call,8.0,Excited,Energized,Mon,2026-10-12,16:00:00
+56,179.0,Text,4.0,Happy,Energized,Mon,2026-10-12,19:00:00
+57,190.0,Phone Call,1.0,Calm,Neutral,Tue,2026-10-13,06:00:00
+58,191.0,In Person,1.0,Happy,Energized,Tue,2026-10-13,07:00:00
+59,193.0,In Person,2.0,Happy,Energized,Tue,2026-10-13,09:00:00
+60,195.0,Phone Call,4.0,Anxious,Drained,Tue,2026-10-13,11:00:00
+61,197.0,Text,8.0,Happy,Relaxed,Tue,2026-10-13,13:00:00
+62,198.0,In Person,12.0,Anxious,Drained,Tue,2026-10-13,14:00:00
+63,199.0,Phone Call,20.0,Anxious,Drained,Tue,2026-10-13,15:00:00
+64,215.0,Video Call,40.0,Calm,Relaxed,Wed,2026-10-14,07:00:00
+65,216.0,Text,4.0,Calm,Relaxed,Wed,2026-10-14,08:00:00
+66,217.0,Phone call,2.0,Happy,Energized,Wed,2026-10-14,09:00:00
+67,220.0,In Person,4.0,Stressed,Drained,Wed,2026-10-14,12:00:00
+68,221.0,In Person,9.0,Happy,Motivated,Wed,2026-10-14,13:00:00
+69,223.0,Text,2.0,Excited,Motivated,Wed,2026-10-14,15:00:00
+70,224.0,Phone Call,1.0,Excited,Motivated,Wed,2026-10-14,16:00:00
+71,238.0,Text,5.0,Happy,Energized,Thu,2026-10-15,06:00:00
+72,241.0,Phone Call,2.0,Excited,Energized,Thu,2026-10-15,09:00:00
+73,244.0,Text,1.0,Happy,Energized,Thu,2026-10-15,12:00:00
+74,246.0,In Person,1.0,Calm,Neutral,Thu,2026-10-15,14:00:00
+75,247.0,Text,6.0,Happy,Energized,Thu,2026-10-15,15:00:00
+76,248.0,In Person,7.0,Anxious,Drained,Thu,2026-10-15,16:00:00
+77,249.0,Text,10.0,Calm,Relaxed,Thu,2026-10-15,17:00:00
+78,264.0,In Person,1.0,Calm,Relaxed,Fri,2026-10-16,08:00:00
+79,266.0,Video Call,2.0,Happy,Relaxed,Fri,2026-10-16,10:00:00
+80,267.0,In Person,2.0,Anxious,Drained,Fri,2026-10-16,11:00:00
+81,269.0,Video Call,6.0,Anxious,Drained,Fri,2026-10-16,13:00:00
+82,270.0,Video Call,1.0,Happy,Energized,Fri,2026-10-16,14:00:00
+83,271.0,Text,30.0,Stressed,Drained,Fri,2026-10-16,15:00:00
+84,273.0,Text,22.0,Happy,Energized,Fri,2026-10-16,17:00:00
+85,290.0,In Person,1.0,Calm,Relaxed,Sat,2026-10-17,10:00:00
+86,291.0,Phone Call,3.0,Happy,Energized,Sat,2026-10-17,11:00:00
+87,292.0,In Person,6.0,Happy,Energized,Sat,2026-10-17,12:00:00
+88,294.0,In Person,2.0,Happy,Energized,Sat,2026-10-17,14:00:00
+89,295.0,In Person,1.0,Calm,Relaxed,Sat,2026-10-17,15:00:00
+90,297.0,Text,22.0,Calm,Relaxed,Sat,2026-10-17,17:00:00
+91,298.0,In Person,2.0,Happy,Motivated,Sat,2026-10-17,18:00:00
+92,288.0,In Person,1.0,Excited,Energized,Sat,2026-10-17,08:00:00
+93,314.0,In Person,2.0,Happy,Motivated,Sun,2026-10-18,10:00:00
+94,315.0,Video Call,30.0,Happy,Neutral,Sun,2026-10-18,11:00:00
+95,317.0,Text,12.0,Calm,Relaxed,Sun,2026-10-18,13:00:00
+96,318.0,In Person,11.0,Calm,Relaxed,Sun,2026-10-18,14:00:00
+97,320.0,In Person,20.0,Calm,Relaxed,Sun,2026-10-18,16:00:00
+98,321.0,Text,2.0,Happy,Energized,Sun,2026-10-18,17:00:00
+99,322.0,Text,1.0,Excited,Energized,Sun,2026-10-18,18:00:00
+100,323.0,Video Call,3.0,Excited,Energized,Sun,2026-10-18,19:00:00
