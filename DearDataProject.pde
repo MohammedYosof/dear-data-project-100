@@ -18,3 +18,13 @@ void draw() {
   fill(160, 170, 190);
   text("Visualising duration (with petals), emotion (with colours), and flow of time across the week.", 80, 85);
   
+  noFill();
+  stroke(50, 65, 90, 120);
+  strokeWeight(1.5);
+  beginShape();
+  for (Interaction inter : interactions) {
+    vertex(inter.x, inter.y);
+  }
+  endShape();
+  
+  chechHover();
