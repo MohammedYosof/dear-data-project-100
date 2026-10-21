@@ -28,3 +28,34 @@ void draw() {
   endShape();
   
   chechHover();
+}
+
+class Interaction {
+  int id;
+  String day;
+  String dataStr;
+  String timeStr;
+  String type;
+  float duration;
+  String impact;
+  String feeling;
+  String initiator;
+  String setting;
+  float x, y;
+  
+  Interaction(int id, String day, String dateStr, String timeStr, String type, float duration, 
+              String impact, String feeling, String initiator, String setting, float x, float y) {
+    this.id = id;
+    this.day = day;
+    this.dateStr = dateStr;
+    this.timeStr = timeStr;
+    this.type = type;
+    this.duration = duration;
+    this.impact = impact;
+    this.feeling = feeling;
+    this.initiator = initiator;
+    this.setting = setting;
+    this.x = x;
+    this.y = y;
+   }
+  
