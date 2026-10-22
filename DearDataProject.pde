@@ -58,4 +58,23 @@ class Interaction {
     this.x = x;
     this.y = y;
    }
+   
+   void display() {
+     pushStyle();
+     pushMatrix();
+     translate(x, y);
+     
+     int col = getFeelingColour(feeling);
+     
+     noFill();
+     strokeWeight(1.5);
+     if (setting.toLowerCase().contains("home")) {
+       stroke(110, 180, 240, 180);
+     } else if (setting.toLowerCase().contains("lecture") || setting.toLowerCase().contains("school")) {
+       stroke(240, 190, 110, 180);
+     } else {
+       stroke(180, 140, 220, 180);
+     }
+     ellipse(0, 0, 34, 34);
+       
   
