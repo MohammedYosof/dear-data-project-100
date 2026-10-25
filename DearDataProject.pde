@@ -115,3 +115,24 @@ class Interaction {
        stroke(180, 140, 220, 180);
      }
      ellipse(0, 0, 34, 34);
+     
+     if (duration < 5) {
+      fill(col);
+      noStroke();
+      ellipse(0, 0, 7, 7);
+    } else {
+      int petalCount = int(map(duration, 5, 45, 3, 8));
+      petalCount = constrain(petalCount, 3, 8);
+      
+      float petalSize = map(duration, 1, 45, 9, 24);
+      float spreadRadius = map(duration, 1, 45, 4, 15);
+
+      fill(col, 220);
+      noStroke();
+      for (int i = 0; i < petalCount; i++) {
+        float petalAngle = TWO_PI / petalCount * i;
+        float px = cos(petalAngle) * spreadRadius;
+        float py = sin(petalAngle) * spreadRadius;
+        ellipse(px, py, petalSize, petalSize * 0.6);
+      }
+    }
