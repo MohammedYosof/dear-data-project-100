@@ -136,3 +136,18 @@ class Interaction {
         ellipse(px, py, petalSize, petalSize * 0.6);
       }
     }
+    
+    if (initiator.toLowerCase().contains("parent")) {
+      fill(255, 100, 100);
+    } else if (initiator.toLowerCase().contains("classmate") || initiator.toLowerCase().contains("friend")) {
+      fill(100, 255, 150);
+    } else {
+      fill(255, 255, 255);
+    }
+    noStroke();
+    ellipse(0, 0, 5, 5);
+
+    popMatrix();
+    popStyle();
+  }
+}
