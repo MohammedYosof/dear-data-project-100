@@ -151,3 +151,21 @@ class Interaction {
     popStyle();
   }
 }
+
+int getFeelingColor(String f) {
+  if (f == null) return color(130, 150, 180);
+  f = f.trim();
+  if (f.equalsIgnoreCase("Happy")) {
+    return color(240, 160, 110);
+  } else if (f.equalsIgnoreCase("Excited")) {
+    return color(250, 210, 100);
+  } else if (f.equalsIgnoreCase("Calm")) {
+    return color(110, 190, 170);
+  } else if (f.equalsIgnoreCase("Stressed")) {
+    return color(220, 90, 90);
+  } else if (f.equalsIgnoreCase("Anxious")) {
+    return color(150, 110, 190);
+  } else {
+    return color(130, 150, 180);
+  }
+}
