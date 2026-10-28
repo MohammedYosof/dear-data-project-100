@@ -169,3 +169,27 @@ int getFeelingColor(String f) {
     return color(130, 150, 180);
   }
 }
+
+// Hover interaction logic
+void checkHover() {
+  for (Interaction inter : interactions) {
+    float d = dist(mouseX, mouseY, inter.x, inter.y);
+    if (d < 16) {
+      noFill();
+      stroke(255, 255, 255);
+      strokeWeight(2);
+      ellipse(inter.x, inter.y, 38, 38);
+
+      fill(25, 30, 45, 240);
+      stroke(80, 100, 130);
+      rect(75, height - 85, width - 150, 55, 8);
+
+      fill(240, 245, 255);
+      textSize(12);
+      text("ID: " + inter.id + " | Day: " + inter.day + " (" + inter.dateStr + " " + inter.timeStr + ") | Type: " + inter.type + 
+           " | Duration: " + int(inter.duration) + "m", 95, height - 55);
+           
+      text("Initiator: " + inter.initiator + " | Setting: " + inter.setting + " | Feeling: " + inter.feeling + " | Impact: " + inter.impact, 95, height - 35);
+    }
+  }
+}
