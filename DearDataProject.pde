@@ -72,8 +72,13 @@ class Interaction {
    }
    
    void updatePhysics() {
-     float mouseDist = dist(mouseX, mouseY, x, y);
      
+     float driftSpeed = 0.0015;
+     float driftRange = 70;
+     loat targetX = originalX + (noise(noiseSeedX + frameCount * driftSpeed) - 0.5) * driftRange * 2;
+    float targetY = originalY + (noise(noiseSeedY + frameCount * driftSpeed) - 0.5) * driftRange * 2;
+     
+     float mouseDist = dist(mouseX, mouseY, x, y);
      if (mouseDist < 150 && mousePressed) {
        float pushAngle = atan2(y - mouseY, x - mouseX);
        vx += cos(pushAngle) * 0.8;
