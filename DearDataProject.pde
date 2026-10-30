@@ -1,11 +1,11 @@
-ArrayList<interactions> interactions;
+ArrayList<Interaction> interactions;
 
 void setup() {
   size(1200, 850);
   smooth();
-  interactions = new ArrayList<Interactions>();
+  interactions = new ArrayList<Interaction>();
   
-  loadData();
+  loadData(); // Ensure your loadData() function parses your text file into the list!
 }
 
 void draw() {
@@ -27,17 +27,18 @@ void draw() {
   }
   endShape();
   
-  for (Interactions inter : interactions) {
+  for (Interaction inter : interactions) {
     inter.updatePhysics();
     inter.display();
+  }
   
-  chechHover();
+  checkHover();
 }
 
 class Interaction {
   int id;
   String day;
-  String dataStr;
+  String dateStr;
   String timeStr;
   String type;
   float duration;
@@ -72,17 +73,11 @@ class Interaction {
    }
    
    void updatePhysics() {
-     
-     float driftSpeed = 0.0015;
-     float driftRange = 70;
-     loat targetX = originalX + (noise(noiseSeedX + frameCount * driftSpeed) - 0.5) * driftRange * 2;
-    float targetY = originalY + (noise(noiseSeedY + frameCount * driftSpeed) - 0.5) * driftRange * 2;
-     
      float mouseDist = dist(mouseX, mouseY, x, y);
      if (mouseDist < 150 && mousePressed) {
        float pushAngle = atan2(y - mouseY, x - mouseX);
        vx += cos(pushAngle) * 0.8;
-       vy += cos(pushAngle) * 0.8;
+       vy += sin(pushAngle) * 0.8;
      }
      
      float spring = 0.05;
@@ -91,8 +86,9 @@ class Interaction {
      vx += dx * spring;
      vy += dy * spring;
      
-     vx += 0.85;
-     vy += 0.85;
+     // Damping (friction) to slow movement down smoothly
+     vx *= 0.85;
+     vy *= 0.85;
      
      x += vx;
      y += vy;
@@ -108,7 +104,7 @@ class Interaction {
      translate(x, y);
      rotate(angle);
      
-     int col = getFeelingColour(feeling);
+     int col = getFeelingColor(feeling);
      
      noFill();
      strokeWeight(1.5);
@@ -122,39 +118,39 @@ class Interaction {
      ellipse(0, 0, 34, 34);
      
      if (duration < 5) {
-      fill(col);
-      noStroke();
-      ellipse(0, 0, 7, 7);
-    } else {
-      int petalCount = int(map(duration, 5, 45, 3, 8));
-      petalCount = constrain(petalCount, 3, 8);
-      
-      float petalSize = map(duration, 1, 45, 9, 24);
-      float spreadRadius = map(duration, 1, 45, 4, 15);
+       fill(col);
+       noStroke();
+       ellipse(0, 0, 7, 7);
+     } else {
+       int petalCount = int(map(duration, 5, 45, 3, 8));
+       petalCount = constrain(petalCount, 3, 8);
+       
+       float petalSize = map(duration, 1, 45, 9, 24);
+       float spreadRadius = map(duration, 1, 45, 4, 15);
 
-      fill(col, 220);
-      noStroke();
-      for (int i = 0; i < petalCount; i++) {
-        float petalAngle = TWO_PI / petalCount * i;
-        float px = cos(petalAngle) * spreadRadius;
-        float py = sin(petalAngle) * spreadRadius;
-        ellipse(px, py, petalSize, petalSize * 0.6);
-      }
-    }
+       fill(col, 220);
+       noStroke();
+       for (int i = 0; i < petalCount; i++) {
+         float petalAngle = TWO_PI / petalCount * i;
+         float px = cos(petalAngle) * spreadRadius;
+         float py = sin(petalAngle) * spreadRadius;
+         ellipse(px, py, petalSize, petalSize * 0.6);
+       }
+     }
     
-    if (initiator.toLowerCase().contains("parent")) {
-      fill(255, 100, 100);
-    } else if (initiator.toLowerCase().contains("classmate") || initiator.toLowerCase().contains("friend")) {
-      fill(100, 255, 150);
-    } else {
-      fill(255, 255, 255);
-    }
-    noStroke();
-    ellipse(0, 0, 5, 5);
+     if (initiator.toLowerCase().contains("parent")) {
+       fill(255, 100, 100);
+     } else if (initiator.toLowerCase().contains("classmate") || initiator.toLowerCase().contains("friend")) {
+       fill(100, 255, 150);
+     } else {
+       fill(255, 255, 255);
+     }
+     noStroke();
+     ellipse(0, 0, 5, 5);
 
-    popMatrix();
-    popStyle();
-  }
+     popMatrix();
+     popStyle();
+   }
 }
 
 int getFeelingColor(String f) {
@@ -197,4 +193,8 @@ void checkHover() {
       text("Initiator: " + inter.initiator + " | Setting: " + inter.setting + " | Feeling: " + inter.feeling + " | Impact: " + inter.impact, 95, height - 35);
     }
   }
+}
+
+void loadData() {
+  // Placeholder for your table loading logic (e.g. loadTable("interactions.txt", "header"))
 }
