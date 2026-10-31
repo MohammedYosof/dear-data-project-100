@@ -196,5 +196,10 @@ void checkHover() {
 }
 
 void loadData() {
-  // Placeholder for your table loading logic (e.g. loadTable("interactions.txt", "header"))
-}
+  // Load your interactions.txt file from the data folder
+  Table table = loadTable("interactions.txt", "header");
+  
+  if (table == null) {
+    println("ERROR: Could not find interactions.txt inside the data folder!");
+    return;
+  }
